@@ -19,6 +19,7 @@ namespace NHShareBack
         {
             _listener = new HttpListener();
             _listener.Prefixes.Add("http://localhost:3009/");
+            _listener.Prefixes.Add("http://localhost:3009/Config/");
 
             _listenerThread = new Thread(new ThreadStart(Loop));
         }

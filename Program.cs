@@ -28,6 +28,7 @@ namespace NHShareBack
             Server.OnStartListening += DisplayStart;
             Server.StartListening();
 
+            await Globals.Db.InitAsync();
             await Task.Delay(-1).ConfigureAwait(false);
         }
 

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RethinkDb.Driver" Version="2.3.150" />
+    <PackageReference Include="RethinkDb.Driver.Linq" Version="2.3.150" />
   </ItemGroup>
 
 </Project>
